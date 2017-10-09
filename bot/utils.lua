@@ -20,7 +20,6 @@ function string.random(length)
    end
    return str;
 end
-
 function string:split(sep)
   local sep, fields = sep or ":", {}
   local pattern = string.format("([^%s]+)", sep)
