@@ -19,9 +19,9 @@ function string.random(length)
       str = str..string.char(math.random(97, 122));
    end
    return str;
-end
-function string:split(sep)
-  local sep, fields = sep or ":", {}
+endfunction string:split(sep)
+ -
+local sep, fields = sep or ":", {}
   local pattern = string.format("([^%s]+)", sep)
   self:gsub(pattern, function(c) fields[#fields+1] = c end)
   return fields
